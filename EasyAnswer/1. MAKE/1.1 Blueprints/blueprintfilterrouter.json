@@ -1,0 +1,541 @@
+{
+    "name": "réponse \"tu\" - content",
+    "flow": [
+        {
+            "id": 29,
+            "module": "gateway:CustomWebHook",
+            "version": 1,
+            "parameters": {
+                "hook": 612810,
+                "maxResults": 1
+            },
+            "mapper": {},
+            "metadata": {
+                "designer": {
+                    "x": 0,
+                    "y": 0
+                },
+                "restore": {
+                    "parameters": {
+                        "hook": {
+                            "data": {
+                                "editable": "true"
+                            },
+                            "label": "reponse \"tu\" FR"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "hook",
+                        "type": "hook:gateway-webhook",
+                        "label": "Webhook",
+                        "required": true
+                    },
+                    {
+                        "name": "maxResults",
+                        "type": "number",
+                        "label": "Maximum number of results"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 30,
+            "module": "openai-gpt-3:CreateCompletion",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 1133693
+            },
+            "filter": {
+                "name": "contient texte",
+                "conditions": [
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "a"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "z"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:equal:ci",
+                            "b": "e"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "r"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "t"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "y"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "u"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "i"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "o"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "p"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "q"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "s"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "d"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "f"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "g"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "h"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "j"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "k"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "l"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "m"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "w"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "x"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "c"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "v"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "b"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{29.currentEmailBody}}",
+                            "o": "text:contain:ci",
+                            "b": "n"
+                        }
+                    ]
+                ]
+            },
+            "mapper": {
+                "model": "text-davinci-003",
+                "prompt": "====Important====\nUtilis le tutoiement pour répondre à l'email de {{29.emailTo}} avec un mail familier:\n{{substring(29.currentEmailBody; 0; 2000)}}\n==== end of important ====\n\nVoici l'email précédent pour un contexte de référence:\n{{29.previousEmailBody}}\n=== end of reference ==="
+            },
+            "metadata": {
+                "designer": {
+                    "x": 300,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "echo": {
+                            "mode": "chose"
+                        },
+                        "model": {
+                            "mode": "chose",
+                            "label": "text-davinci-003"
+                        },
+                        "top_p": {
+                            "collapsed": true
+                        },
+                        "max_tokens": {
+                            "collapsed": true
+                        },
+                        "temperature": {
+                            "collapsed": true
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "openai-gpt-3"
+                            },
+                            "label": "My OpenAI connection"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:openai-gpt-3",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "model",
+                        "type": "select",
+                        "label": "Model",
+                        "required": true
+                    },
+                    {
+                        "name": "prompt",
+                        "type": "text",
+                        "label": "Prompt"
+                    },
+                    {
+                        "name": "max_tokens",
+                        "type": "number",
+                        "label": "Max Tokens"
+                    },
+                    {
+                        "name": "temperature",
+                        "type": "number",
+                        "label": "Temperature"
+                    },
+                    {
+                        "name": "top_p",
+                        "type": "number",
+                        "label": "Top p"
+                    },
+                    {
+                        "name": "n_completions",
+                        "type": "number",
+                        "label": "N"
+                    },
+                    {
+                        "name": "echo",
+                        "type": "boolean",
+                        "label": "Echo"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 35,
+            "module": "openai-gpt-3:CreateCompletion",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 1133693
+            },
+            "mapper": {
+                "model": "text-davinci-003",
+                "prompt": "modifie le mail en prenant en compte: {{29.currentEmailBody}}"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 600,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "echo": {
+                            "mode": "chose"
+                        },
+                        "model": {
+                            "mode": "chose",
+                            "label": "text-davinci-003"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "openai-gpt-3"
+                            },
+                            "label": "My OpenAI connection"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:openai-gpt-3",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "model",
+                        "type": "select",
+                        "label": "Model",
+                        "required": true
+                    },
+                    {
+                        "name": "prompt",
+                        "type": "text",
+                        "label": "Prompt"
+                    },
+                    {
+                        "name": "max_tokens",
+                        "type": "number",
+                        "label": "Max Tokens"
+                    },
+                    {
+                        "name": "temperature",
+                        "type": "number",
+                        "label": "Temperature"
+                    },
+                    {
+                        "name": "top_p",
+                        "type": "number",
+                        "label": "Top p"
+                    },
+                    {
+                        "name": "n_completions",
+                        "type": "number",
+                        "label": "N"
+                    },
+                    {
+                        "name": "echo",
+                        "type": "boolean",
+                        "label": "Echo"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 32,
+            "module": "markdown:Compile",
+            "version": 2,
+            "parameters": {},
+            "mapper": {
+                "gfm": true,
+                "data": "{{30.choices[].text}}",
+                "sanitize": false
+            },
+            "metadata": {
+                "designer": {
+                    "x": 900,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "gfm": {
+                            "mode": "chose"
+                        },
+                        "sanitize": {
+                            "mode": "chose"
+                        }
+                    }
+                },
+                "expect": [
+                    {
+                        "name": "data",
+                        "type": "text",
+                        "label": "Markdown"
+                    },
+                    {
+                        "name": "gfm",
+                        "type": "boolean",
+                        "label": "GitHub Flavored Markdown",
+                        "required": true
+                    },
+                    {
+                        "name": "sanitize",
+                        "type": "boolean",
+                        "label": "Sanitize",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 33,
+            "module": "gateway:WebhookRespond",
+            "version": 1,
+            "parameters": {},
+            "mapper": {
+                "body": "{{32.data}}",
+                "status": "200",
+                "headers": []
+            },
+            "metadata": {
+                "designer": {
+                    "x": 1200,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "headers": {
+                            "mode": "chose"
+                        }
+                    }
+                },
+                "expect": [
+                    {
+                        "name": "status",
+                        "type": "uinteger",
+                        "label": "Status",
+                        "required": true,
+                        "validate": {
+                            "min": 100
+                        }
+                    },
+                    {
+                        "name": "body",
+                        "type": "any",
+                        "label": "Body"
+                    },
+                    {
+                        "name": "headers",
+                        "spec": [
+                            {
+                                "name": "key",
+                                "type": "text",
+                                "label": "Key",
+                                "required": true,
+                                "validate": {
+                                    "max": 256
+                                }
+                            },
+                            {
+                                "name": "value",
+                                "type": "text",
+                                "label": "Value",
+                                "required": true,
+                                "validate": {
+                                    "max": 4096
+                                }
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Custom headers",
+                        "validate": {
+                            "maxItems": 16
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "metadata": {
+        "instant": true,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "zone": "eu1.make.com"
+    }
+}

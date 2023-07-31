@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "EasyAnswer",
+  "version": "1.0",
+  "description": "Extension pour répondre rapidement et facilement à vos emails",
+  "icons": {
+    "128": "icon128.png",
+"48": "icon48.png",
+    "16": "icon16.png"
+  },
+
+
+  "content_scripts": [
+
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": [
+        "Corriger_FR/dist/extension.js",
+        "Corriger_FR/dist/gmailJsLoader.js",
+        "Corriger_FR/src/extensionInjector.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": [
+        "Reponse_vous_FR/dist/extension.js",
+        "Reponse_vous_FR/dist/gmailJsLoader.js",
+        "Reponse_vous_FR/src/extensionInjector.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": [
+        "Reponse_Tu_FR/dist/extension.js",
+        "Reponse_Tu_FR/dist/gmailJsLoader.js",
+        "Reponse_Tu_FR/src/extensionInjector.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": [
+        "Reformuler_FR/dist/extension.js",
+        "Reformuler_FR/dist/gmailJsLoader.js",
+        "Reformuler_FR/src/extensionInjector.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": [
+        "Traduction_FR_ENG/dist/extension.js",
+        "Traduction_FR_ENG/dist/gmailJsLoader.js",
+        "Traduction_FR_ENG/src/extensionInjector.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
