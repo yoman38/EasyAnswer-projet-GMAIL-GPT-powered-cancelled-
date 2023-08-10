@@ -1,6 +1,9 @@
 EasyAnswer - Email Management Extension
 
 Version: 5.0.0
+Based on the Work from BusinessAutomated !
+Developed by Guillaume (yoman38) and Quentin 
+Special thanks Kema-dev
 
 Introduction:
 EasyAnswer is a browser extension designed to simplify email management and improve productivity for professionals using the Gmail client. It utilizes advanced natural language processing (NLP) techniques to offer automated responses, corrections, rephrasing, and translations to enhance the email writing and communication experience.
