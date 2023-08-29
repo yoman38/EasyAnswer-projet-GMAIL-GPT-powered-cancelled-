@@ -1,15 +1,22 @@
-EasyAnswer - Email Management Extension
+![icon128](https://github.com/yoman38/EasyAnswer-projet-GMAIL-GPT-powered-cancelled-/assets/124726056/61a271ef-0d35-4f20-b1eb-48e372d3ad86)
+
+
+**EasyAnswer - Email Management Extension**
 
 Version: 5.0.0
 Based on the Work from BusinessAutomated !
 Developed by Guillaume (yoman38) and Quentin 
 Special thanks Kema-dev
 
-Introduction:
+**Introduction:**
 EasyAnswer is a browser extension designed to simplify email management and improve productivity for professionals using the Gmail client. It utilizes advanced natural language processing (NLP) techniques to offer automated responses, corrections, rephrasing, and translations to enhance the email writing and communication experience.
 
-Features:
+**Features:**
 1. Automated Responses: EasyAnswer suggests intelligent and contextually relevant automated responses for incoming emails, saving time and effort in replying.
+
+
+https://github.com/yoman38/EasyAnswer-projet-GMAIL-GPT-powered-cancelled-/assets/124726056/8dc6ca4d-b731-4e92-ba68-caf0ca991cb2
+
 
 2. Automatic Correction: The extension detects and provides suggestions for spelling and grammar errors in real-time while composing emails.
 
@@ -21,12 +28,12 @@ System Requirements:
 - Supported Browsers: Google Chrome, Mozilla Firefox, Brave
 - Operating System: Windows (other platforms will be added in future versions)
 
-Installation:
+**Installation:**
 1. Download the extension package from the Chrome Web Store or Firefox Add-ons Marketplace.
 2. Add the extension to your browser.
 3. EasyAnswer will be seamlessly integrated into your Gmail client.
 
-Usage:
+**Usage:**
 1. Open Gmail in your browser.
 2. EasyAnswer buttons will be visible in the email interface.
 3. Compose or read an email and use the extension's features accordingly.
