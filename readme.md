@@ -14,15 +14,28 @@ EasyAnswer is a browser extension designed to simplify email management and impr
 **Features:**
 1. Automated Responses: EasyAnswer suggests intelligent and contextually relevant automated responses for incoming emails, saving time and effort in replying.
 
-
+In english, 'informal'
 https://github.com/yoman38/EasyAnswer-projet-GMAIL-GPT-powered-cancelled-/assets/124726056/8dc6ca4d-b731-4e92-ba68-caf0ca991cb2
 
 
+In english, 'formal'
+https://github.com/yoman38/EasyAnswer-projet-GMAIL-GPT-powered-cancelled-/assets/124726056/831d66de-b61a-463e-af56-f0b3d6453eb0
+
 2. Automatic Correction: The extension detects and provides suggestions for spelling and grammar errors in real-time while composing emails.
+
+
+https://github.com/yoman38/EasyAnswer-projet-GMAIL-GPT-powered-cancelled-/assets/124726056/d9e8d0d5-e3d9-47f1-912e-bd6b2cacb3b8
+
 
 3. Sentence Rephrasing: Users can opt for reformulated sentences to enhance clarity and communication in their emails.
 
 4. Automatic Translation: EasyAnswer offers instant translation of emails from and to different languages, streamlining multilingual communication.
+
+
+
+https://github.com/yoman38/EasyAnswer-projet-GMAIL-GPT-powered-cancelled-/assets/124726056/fadb8357-cea5-4058-89fe-aa7c64e463c6
+
+
 
 System Requirements:
 - Supported Browsers: Google Chrome, Mozilla Firefox, Brave
